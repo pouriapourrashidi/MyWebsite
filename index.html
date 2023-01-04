@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pouria Pourrashidi</title>
+    <link rel="icon" type="image/png" href="./Parking.png">
+    <script src="https://kit.fontawesome.com/047635a8ce.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+    <div class="theme-switch-wrapper">
+        
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fa-solid fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+        <!-- <div class="music-container">
+            <a href="#" onclick="checkMusic()" id="music-link" title="Play Some Music!"><i class="fa-solid fa-music"></i></a>
+        </div> -->
+    </div>
+    <!-- <nav id="nav" class="navigation"> -->
+        <!-- <div class="topnav" id="myTopnav">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contacts">CONTACTS</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars" id="hamburgerBtn"></i>
+            </a>
+        </div> -->
+        <div class="overlay" id="overlay" name="overlay">
+            <nav id="nav">
+              <ul>
+                <li id="nav-1"><a href="#home" name="overlay">HOME</a></li>
+                <li id="nav-2"><a href="#about" name="overlay">ABOUT</a></li>
+                <li id="nav-3"><a href="#projects" name="overlay">PROJECTS</a></li>
+                <li id="nav-4"><a href="#contacts" name="overlay">CONTACT</a></li>
+              </ul>
+            </nav>
+          </div>
+        
+          <div class="menu-bars" id="menu-bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div> 
+    <!-- </nav> -->
+</div>
+    <section id="home">
+        <div class="home">
+            <div class="title-group">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="0">Welcome to My Website!</h1>
+                <h2 data-aos="fade-up"
+                data-aos-delay="1000">My name is Pouria Pourrashidi, a Web and Python Developer. For further information please download my resume.</h2>
+                <div class="test">
+                <a href="resume.pdf" download>
+                        <div class="image-resume" data-aos="fade-right" data-aos-delay="1000">
+                            <h1>Resume</h1>
+                            <img src="img/Resume.svg" alt="Resume" id="image1" class="resume">
+                        </div>
+                </a></div>
+            </div>
+            <div>
+                <img data-aos="fade-left"
+                data-aos-delay="200" src="./img/profile.jpeg" alt="" class="pouria">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about">
+        <h1 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1000">About Me</h1>
+        <div class="about-container">
+            <p data-aos="zoom-in" data-aos-delay="300">
+                I'm a second year master of science student in Electrical and Computer Engineering at <a href="https://www.concordia.ca">Concordia University</a>. Right now, I'm working on my thesis, which is about the improvement of IoT Task Offloading using Software-Defined Networks (SDN) under supervision of 
+                <a href="https://users.encs.concordia.ca/~yshayan/">Prof. Shayan</a>  and <a href="https://users.encs.concordia.ca/~coutinho/">Prof. Coutinho</a>. Beside working on my thesis, I would like to teach in the university. I've been a teacher assistant for Computer Networks and Protocols (Graduate Course), Computer Organization and Assembly Language, System Hardware, Database, Computer Organization and Software, Discrete Mathematic, and Programming Methodology courses during my graduate studies, and some other courses in my undergraduate. Beside software/web development, I am enthusiastic about Computer Networks, and during my undergraduate studies, I got certificates for MCSE2016 
+                and Cisco CCNA. 
+                For my hobbies, I like to go to gym, watch soccer games, and go to concerts.  
+                <br> Please download my resume from <a href="resume.pdf"> Here! </a>
+            </p>
+            <div class="three-image">    
+                <div class="image-container" data-aos="fade-right" data-aos-delay="1000">
+                    <h1>Web Innovation</h1>
+                    <img src="img/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1">
+                </div>
+                <div class="image-container" data-aos="fade-up" data-aos-delay="1000">
+                    <h1>Problem Solving</h1>
+                    <img src="img/undraw_feeling_proud_light.svg" alt="Feeling Proud" id="image2">
+                </div>
+                <div class="image-container" data-aos="fade-left" data-aos-delay="1000">
+                    <h1>High Concept</h1>
+                    <img src="img/undraw_conceptual_idea_light.svg" alt="Idea" id="image3">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="projects">
+        <div class="projects">
+            <h1>Projects</h1>
+            <p class="text-box"> Herein you can observe a summary of projects that I have done. More projects can be found in my resume and github page!</p>
+            <div class="project">
+                <div class="subproject" data-aos="fade-right" data-aos-delay="300">
+                    <h2>Face Recognition</h2>
+                    <p>By using the power of React, Express, and PostgreSQL, this project aims at recognizing a human face at a given image. The faces has been deted using the Clarifai API.</p>
+                </div>
+                <img src="./img/Face_Recognition.png" data-aos="fade-right" data-aos-delay="300">
+                <div class="lineH"></div>
+                <div class="subproject" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Robot Search</h2>
+                    <p>In this funny project, from a list of robots that has been fetched from an API, you search between a list of robots to find the desired one. In this project Redux for fetching Robots and SearchField and Hooks has been used.</p>
+                </div>
+                <img src="./img/Robo_Friend.png" data-aos="fade-left" data-aos-delay="300">
+            </div>
+            <hr class="line">
+            <div class="project">
+                <div class="subproject" data-aos="fade-right" data-aos-delay="300">
+                    <h2>Music Player</h2>
+                    <p>This music player plays series of music. User can change the musics as well as the timeline to mover forward or backward. </p>
+                </div>
+                <img src="./img/Music_Player.png" data-aos="fade-right" data-aos-delay="300">
+                <div class="lineH"></div>
+                <div class="subproject" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Custom Countdown</h2>
+                    <p>A custom countdown, which givs the user ability to setup a countdown to a specific date. The application uses local storage to save last countdown. </p>
+                </div>
+                <img src="./img/time.gif" data-aos="fade-left" data-aos-delay="300">
+                
+            </div>
+            <hr class="line">
+            <div class="project">
+                <div class="subproject" data-aos="fade-right" data-aos-delay="300">
+                    <h2>Distributed File System JAVA</h2>
+                    <p>Implementation of remote and distributed file storage using Remote Method Invocation (RMI) and client-server communication. File operations has been implemented in this project, such as read, write, create file, and etc.</p>
+                </div>
+                <img src="./img/Diagram.png" data-aos="fade-right" data-aos-delay="300">
+                <div class="lineH"></div>
+                <div class="subproject" data-aos="fade-left" data-aos-delay="300">
+                    <h2>Mininet Projects Using Python</h2>
+                    <p>Implementing several IoT networks using Software-Defined Network with POX controller (Python based) for jurnal and confrence papers</p>
+                </div>
+                <img src="./img/Mininet.png" data-aos="fade-left" data-aos-delay="300">
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="contacts">
+        <h1>CONTACTS</h1>
+        <div class="social-icons">
+            <a href="mailto: p.pourrashidy@gmail.com" name="overlay"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/pouria-pourrashidi/" name="overlay"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/pouriapourrashidi" name="overlay"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+        </div>
+    </section>
+    <!-- controlsList="nodownload" controls preload="auto"  autoplay  -->
+   
+    <audio src="./audio.mp3" id="audio"></audio>
+    <!-- <embed src="./audio.mp3" width="180" height="90" loop="false" autostart="true" hidden="false" /> -->
+    <!-- Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+    delay: 200, // values from 0 to 3000, with step 50ms
+    duration: 1500, // values from 0 to 3000, with step 50ms
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+  });
+    </script>
+    <script async src="script.js"></script>
+</body>
+</html>
